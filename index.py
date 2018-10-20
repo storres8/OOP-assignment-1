@@ -14,3 +14,18 @@ class Line:
         y = (self.coor2[1] - self.coor1[1])
         s = (y/x)
         return s
+
+class Cylinder:
+    def __init__(self,height=1,radius=1):
+        self.height = height
+        self.radius = radius
+
+    def volume(self):
+        pi = 3.14159265359
+        v = (pi)*(self.radius**2)*(self.height)
+        return v
+
+    def surface_area(self):
+        pi = 3.14159265359
+        s = (2*pi*self.radius*self.height) + (2*pi*(self.radius**2))
+        return s
