@@ -16,10 +16,10 @@ class Line:
         return s
 
     def __str__(self):
-        return f"This line has a ditance of {self.distance} and a slope of {self.slope}."
+        return f"This line has a ditance of {self.distance()} and a slope of {self.slope()}."
 
     def __len__(self):
-        return f"distance of line: {self.distance}."
+        return f"distance of line: {self.distance()}."
 
     def __del__(self):
         print("Line was deleted")
@@ -39,3 +39,9 @@ class Cylinder:
         pi = 3.14159265359
         s = (2*pi*self.radius*self.height) + (2*pi*(self.radius**2))
         return s
+
+    def __str__(self):
+        return f"This cylinder has a volume of {self.volume()} and a surface_area of {self.surface_area()}."
+
+    def __del__(self):
+        print("Cylinder was deleted")
