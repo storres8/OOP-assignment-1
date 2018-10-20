@@ -18,12 +18,8 @@ class Line:
     def __str__(self):
         return f"This line has a ditance of {self.distance()} and a slope of {self.slope()}."
 
-    def __len__(self):
-        return f"distance of line: {self.distance()}."
-
     def __del__(self):
         print("Line was deleted")
-
 
 class Cylinder:
     def __init__(self,height=1,radius=1):
